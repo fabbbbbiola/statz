@@ -1,4 +1,9 @@
 all: stat.c
 	gcc -o stat stat.c
 
-clear:
+clean:
+	rm *o
+	rm *~
+
+run: all
+	./stat
